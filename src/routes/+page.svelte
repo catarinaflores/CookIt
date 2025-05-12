@@ -1,5 +1,6 @@
 <script>
     import CookingStation from '$lib/cookingStation.svelte';
+    import Recepies from '$lib/recepies.svelte';
 </script>
 
 <main>
@@ -8,6 +9,7 @@
     </header>
 
     <CookingStation />
+    <Recepies />
 </main>
 
 <style>
