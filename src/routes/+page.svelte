@@ -41,6 +41,11 @@
     <!-- Render dynamic component -->
     <svelte:component this={cookingStation} />
 
+    <!-- <div class="choices">
+        <button on:click={showCrackEgg}>Previous</button>
+        <button on:click={showPanSausage}>Next</button>
+    </div> -->
+
     <!-- Static component -->
     <Recepies />
 </main>
