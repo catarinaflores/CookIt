@@ -1,14 +1,22 @@
 <script>
-    import CookingStation from '$lib/cookingStation.svelte';
+    import CutSausage from '$lib/cutSausage.svelte'
+    import cutSausage from '$lib/cutSausage.svelte';
     import Recepies from '$lib/recepies.svelte';
 </script>
 
 <main>
     <header>
-        <h1>CookIt</h1>
+        <img src="/logo.svg" alt="CookIt" />
     </header>
 
-    <CookingStation />
+    <div class=choices>
+        <button>Crack the Eggs</button>
+        <button>Cut the Sausage</button>
+        <button>Place Sausage in Pan</button>
+        <button>Cook the Omelette</button>
+    </div>
+
+    <CutSausage />
     <Recepies />
 </main>
 
@@ -20,9 +28,6 @@
         background-color: black;
     }
 
-    header h1{
-        color: white;
-    }
     
     main{
         background-color: aqua;
