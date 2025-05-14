@@ -88,6 +88,7 @@
 <div id="cutting-sausage">
     <img bind:this={knife} src="/knife.svg" class="draggable" on:mousedown={handleMouseDown} alt="knife" />
 
+    <img src="/sasixa.svg" class="cuttable" alt="sausage"/>
 </div>
 
 <style global>
@@ -126,5 +127,12 @@
 
     .draggable:active {
         cursor: grabbing;
+    }
+
+    .cuttable {
+        width: 50%;
+        height: 50%;
+        z-index: 1;
+        user-select: none;
     }
 </style>
