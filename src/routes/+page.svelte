@@ -25,12 +25,6 @@
         cookingStation = "PanSausage";
     }
 
-    function handleMouseMove(event) {
-		mousePosition.x = event.clientX;
-		mousePosition.y = event.clientY;
-	}
-
-
 
 </script>
 
@@ -47,7 +41,6 @@
     </div>
 
     <div
-    on:mousemove={handleMouseMove}
     role="region"
     >
         <!--{JSON.stringify( mousePosition)} -->

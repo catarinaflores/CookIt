@@ -3,13 +3,13 @@
 	import {draw} from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 
-	let bgColor = "yellow";
+	let bgColor = "#F5C69D";
 	let slices = 0;
 
 	function handleKnifeClick(){
 		slices += 1;
 		if (slices > 7) {
-			slices = 7;
+			slices = 0;
 		}
 	}
 
@@ -22,25 +22,25 @@
 			<path d="M281.126 32.1677L292.912 23.3855L293.13 40.6484L281.126 32.1677Z" fill="#D58E6F"/>
 			<path d="M15.9858 32.1677L4.20058 23.3855L3.98178 40.6484L15.9858 32.1677Z" fill="#D58E6F"/>
 			{#if slices >= 1}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="41.5" y1="1.09278e-07" x2="41.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="41.5" y1="1.09278e-07" x2="41.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 			{#if slices >= 2}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="76.5" y1="1.09278e-07" x2="76.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="76.5" y1="1.09278e-07" x2="76.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 			{#if slices >= 3}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="111.5" y1="1.09278e-07" x2="111.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="111.5" y1="1.09278e-07" x2="111.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 			{#if slices >= 4}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="146.5" y1="1.09278e-07" x2="146.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="146.5" y1="1.09278e-07" x2="146.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 			{#if slices >= 5}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="181.5" y1="1.09278e-07" x2="181.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="181.5" y1="1.09278e-07" x2="181.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 			{#if slices >= 6}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="216.5" y1="1.09278e-07" x2="216.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="216.5" y1="1.09278e-07" x2="216.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 			{#if slices == 7}
-				<line transition:draw="{{duration: 1500, easing: quintOut}}" x1="251.5" y1="1.09278e-07" x2="251.5" y2="63" stroke={bgColor} stroke-width="5"/>
+				<line transition:draw="{{duration: 500, easing: quintOut}}" x1="251.5" y1="1.09278e-07" x2="251.5" y2="63" stroke={bgColor} stroke-width="5"/>
 			{/if}
 		</svg>
 	</div>
