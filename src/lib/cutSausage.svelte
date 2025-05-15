@@ -1,21 +1,36 @@
 <script>
     import PanSausage from "./panSausage.svelte";
+	import {draw} from 'svelte/transition';
 
-	let knife;
-    let sausage;
+	let bgColor = "yellow";
+	let slices = 0;
+
+	function handleKnifeClick(){
+		slices += 1;
+	}
 
 </script>
 
-<div id="container">
+<div id="container" style="background-color: {bgColor};">
 	<div class="sausage">
-		<svg width="298" height="44" viewBox="0 0 298 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<rect x="13" width="271" height="44" rx="22" fill="#D58E6F"/>
-			<path d="M281.126 21.1677L292.912 12.3855L293.13 29.6484L281.126 21.1677Z" fill="#D58E6F"/>
-			<path d="M15.9858 21.1677L4.20058 12.3855L3.98178 29.6484L15.9858 21.1677Z" fill="#D58E6F"/>
+		<svg width="298" height="63" viewBox="0 0 298 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="13" y="11" width="271" height="44" rx="22" fill="#D58E6F"/>
+			<path d="M281.126 32.1677L292.912 23.3855L293.13 40.6484L281.126 32.1677Z" fill="#D58E6F"/>
+			<path d="M15.9858 32.1677L4.20058 23.3855L3.98178 40.6484L15.9858 32.1677Z" fill="#D58E6F"/>
+			
+			<line x1="41.5" y1="1.09278e-07" x2="41.5" y2="63" stroke={bgColor} stroke-width="5"/>
+			<line x1="76.5" y1="1.09278e-07" x2="76.5" y2="63" stroke={bgColor} stroke-width="5"/>
+			<line x1="111.5" y1="1.09278e-07" x2="111.5" y2="63" stroke={bgColor} stroke-width="5"/>
+			<line x1="146.5" y1="1.09278e-07" x2="146.5" y2="63" stroke={bgColor} stroke-width="5"/>
+			<line x1="181.5" y1="1.09278e-07" x2="181.5" y2="63" stroke={bgColor} stroke-width="5"/>
+			<line x1="216.5" y1="1.09278e-07" x2="216.5" y2="63" stroke={bgColor} stroke-width="5"/>
+			<line x1="251.5" y1="1.09278e-07" x2="251.5" y2="63" stroke={bgColor} stroke-width="5"/>
 		</svg>
 	</div>
 
-	<button aria-label="Cut sausage with knife" class="knife-button">
+	<h1>{slices} Slices</h1>
+
+	<button aria-label="Cut sausage with knife" class="knife-button" on:click={handleKnifeClick}>
 		<svg width="523" height="81" viewBox="0 0 523 81" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g clip-path="url(#clip0_127_52)">
 				<path d="M409.931 62.5843C402.441 64.1687 394.735 65.6811 386.813 67.1214C375.29 69.21 363.262 71.1545 350.947 72.8829C332.366 75.4756 312.921 77.5642 292.972 78.8605C266.109 80.661 238.31 81.0931 210.583 79.5087C198.628 78.8605 210.151 47.1723 188.761 36.7295C187.897 36.2974 187.105 35.7933 186.24 35.1451C178.967 29.6717 171.837 16.6363 177.382 7.56196C177.742 6.91379 181.271 6.33764 187.321 5.83351C210.439 3.88901 270.79 2.88074 334.815 4.60919C352.532 5.11333 370.608 5.76149 388.181 6.69774C398.912 7.27389 409.426 7.92206 419.725 8.71426C426.423 9.21839 432.977 9.79454 439.386 10.3707C475.9 13.7556 506.436 18.5808 522.424 25.3506C528.978 28.2313 481.373 47.6044 409.931 62.5843Z" fill="#CCCCCC"/>
@@ -42,7 +57,6 @@
 		flex-direction: column;
 		height: 100vh;
 		display: flex;
-		background-color: yellow;
 		height: 85vh;
 		width: 85vw;
 		margin: 7% auto;
@@ -50,7 +64,7 @@
 
     #container .sausage {
 		align-self: center;
-		margin-top: 40%;
+		margin-top: 20%;
 		width: 100%;
     }
 	.sausage svg{
