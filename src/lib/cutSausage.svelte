@@ -122,7 +122,11 @@
 		z-index: 2;
 		user-select: none;
 		touch-action: none;
+        object-fit: contain;
+        display: block;
 	}
+
+
 
 
 	@media (max-width: 768px) {
