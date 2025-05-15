@@ -50,14 +50,12 @@
     on:mousemove={handleMouseMove}
     role="region"
     >
-        {JSON.stringify( mousePosition)}
+        <!--{JSON.stringify( mousePosition)} -->
         <!-- Render dynamic component -->
         {#if cookingStation === "CrackEgg"}
             <CrackEgg />
         {:else if cookingStation === "CutSausage"}
-            <CutSausage 
-                mousePosition={mousePosition}
-            />
+            <CutSausage />
         {:else if cookingStation === "PanSausage"}
             <PanSausage />
         {:else if cookingStation === "FlipOmelette"}
