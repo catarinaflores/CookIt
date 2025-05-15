@@ -5,23 +5,31 @@
     import FlipOmelette from '$lib/flipOmelette.svelte';
     import Recepies from '$lib/recepies.svelte';
 
-    let cookingStation = CrackEgg;
+    let cookingStation = "CrackEgg";
+
+    let mousePosition = { x: 0, y: 0 };
 
     function showCutSausage() {
-        cookingStation = CutSausage;
+        cookingStation = "CutSausage";
     }
 
     function showCrackEgg() {
-        cookingStation = CrackEgg;
+        cookingStation = "CrackEgg";
     }
 
     function showFlipOmelette() {
-        cookingStation = FlipOmelette;
+        cookingStation = "FlipOmelette";
     }
 
     function showPanSausage() {
-        cookingStation = PanSausage;
+        cookingStation = "PanSausage";
     }
+
+    function handleMouseMove(event) {
+		mousePosition.x = event.clientX;
+		mousePosition.y = event.clientY;
+	}
+
 
 
 </script>
@@ -38,8 +46,24 @@
         <button on:click={showFlipOmelette}>Flip the Omelette</button>
     </div>
 
-    <!-- Render dynamic component -->
-    <svelte:component this={cookingStation} />
+    <div
+    on:mousemove={handleMouseMove}
+    role="region"
+    >
+        {JSON.stringify( mousePosition)}
+        <!-- Render dynamic component -->
+        {#if cookingStation === "CrackEgg"}
+            <CrackEgg />
+        {:else if cookingStation === "CutSausage"}
+            <CutSausage 
+                mousePosition={mousePosition}
+            />
+        {:else if cookingStation === "PanSausage"}
+            <PanSausage />
+        {:else if cookingStation === "FlipOmelette"}
+            <FlipOmelette />
+        {/if}
+    </div>
 
     <!-- <div class="choices">
         <button on:click={showCrackEgg}>Previous</button>
