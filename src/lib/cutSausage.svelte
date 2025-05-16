@@ -45,8 +45,6 @@
 		</svg>
 	</div>
 
-	<h1>{slices} Slices</h1>
-
 	<button aria-label="Cut sausage with knife" class="knife-button" on:click={handleKnifeClick}>
 		<svg width="523" height="81" viewBox="0 0 523 81" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g clip-path="url(#clip0_127_52)">
@@ -64,7 +62,7 @@
 			</defs>
 		</svg>
 	</button>
-
+	
 
 </div>
 
@@ -81,7 +79,7 @@
 
     #container .sausage {
 		align-self: center;
-		margin-top: 20%;
+		margin-top: 10%;
 		width: 100%;
     }
 	.sausage svg{
