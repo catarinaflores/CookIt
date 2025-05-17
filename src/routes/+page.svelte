@@ -5,6 +5,8 @@
     import FlipOmelette from '$lib/flipOmelette.svelte';
     import Recepies from '$lib/recepies.svelte';
 
+
+
     let cookingStation = "CrackEgg";
 
     let mousePosition = { x: 0, y: 0 };
@@ -31,7 +33,13 @@
 
 </script>
 
-<main class="bg-[#FDF6E3]">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<main class="bg-[#FDF6E3] fredokalight">
     <header class="bg-[#355C7D] justify-center flex">
         <svg width="102" height="77" viewBox="0 0 102 77" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_141_418)">
@@ -66,7 +74,7 @@
             
     </header>
 
-    <h1 class="text-center text-3xl text-[#355C7D]">PLAY WITH YOUR FOOD</h1>
+    <h1 class="text-center text-3xl text-[#355C7D] fredokabold">PLAY WITH YOUR FOOD</h1>
     <h3 class="text-center text-2xl text-[#F67280]">and learn how to cook too!</h3>
 
     <p class="tex-center text-[#355C7D]">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
@@ -105,3 +113,25 @@
     <!-- Static component -->
     <Recepies />
 </main>
+
+<style>
+    
+.fredokalight {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fredokabold {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+</style>
