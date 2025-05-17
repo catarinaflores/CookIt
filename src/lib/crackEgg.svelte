@@ -1,9 +1,9 @@
-<div id="crack-egg">
+<div id="container">
 
 </div>
 
 <style global>
-        #crack-egg {
+        #container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -13,4 +13,12 @@
         margin: 7% auto;
         position: relative;
     }
+
+
+	@media (max-width: 800px) {
+
+		#container{
+			height: 50vh;
+		}
+	}
 </style>

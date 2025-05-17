@@ -73,4 +73,11 @@
         object-fit: contain;
         display: block;
     }
+
+    @media (max-width: 800px) {
+
+		#container{
+			height: 50vh;
+		}
+    }
 </style>

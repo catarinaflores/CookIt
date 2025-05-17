@@ -62,10 +62,9 @@
 			</defs>
 		</svg>
 	</button>
-	
+
 
 </div>
-
 <style global>
 	#container {
 		justify-content: space-between;
@@ -99,5 +98,28 @@
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+
+	@media (max-width: 600px) {
+		#container .sausage{
+			margin-top: 35%;
+		}
+
+		.sausage svg{
+			rotate: 90deg;
+			height: 70%;
+		}
+	}
+
+	@media (max-width: 800px) {
+
+		#container{
+			height: 50vh;
+		}
+		#container .knife-button{
+			margin-bottom: 5%;
+			margin-right: 10%;
+			margin-left: 10%;
+		}
 	}
 </style>
