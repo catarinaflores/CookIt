@@ -74,6 +74,8 @@
 		height: 85vh;
 		width: 85vw;
 		margin: 7% auto;
+		border-radius: 30px;
+		overflow: hidden;
 	}
 
     #container .sausage {
@@ -87,7 +89,7 @@
 		object-fit: contain;
 	}
 
-	#container .knife-button{
+	.knife-button{
 		justify-content: flex-end;
 		margin-bottom: 5%;
 		margin-right: 20%;
@@ -115,6 +117,7 @@
 
 		#container{
 			height: 50vh;
+			border-radius: 20px;
 		}
 		#container .knife-button{
 			margin-bottom: 5%;

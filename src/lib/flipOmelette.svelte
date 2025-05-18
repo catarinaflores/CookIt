@@ -12,6 +12,7 @@
         width: 85vw;
         margin: 7% auto;
         position: relative;
+        border-radius: 30px;
     }
 
 
@@ -19,6 +20,7 @@
 
 		#container{
 			height: 50vh;
+            border-radius: 20px;
 		}
 	}
 </style>

@@ -38,7 +38,37 @@
             <path d="M177.034 161.898C175.658 161.898 174.235 162.42 173.144 163.416L156.821 178.316C154.448 180.498 154.306 184.152 156.441 186.524L163.986 194.781C165.125 196.014 166.69 196.679 168.256 196.679C169.632 196.679 171.056 196.157 172.147 195.16L188.47 180.261C190.842 178.078 190.985 174.425 188.849 172.052L181.305 163.796C180.166 162.562 178.6 161.898 177.034 161.898Z" fill="#383838"/>
             <path d="M263.867 286.928C261.637 286.928 259.597 286.026 258.078 284.365L196.773 217.319L208.351 206.738L269.656 273.832C271.079 275.397 271.791 277.39 271.696 279.478C271.601 281.566 270.7 283.511 269.134 284.887C267.711 286.216 265.813 286.928 263.867 286.928Z" fill="#383838"/>
             <path d="M208.541 197.343C207.165 197.343 205.836 197.817 204.745 198.814L189.229 212.954C186.951 215.042 186.762 218.6 188.849 220.925L251.957 290.012C255.136 293.476 259.502 295.279 263.867 295.279C267.758 295.279 271.649 293.903 274.733 291.056C281.329 285.03 281.756 274.828 275.777 268.28L212.669 199.193C211.578 197.96 210.059 197.343 208.541 197.343Z" fill="#BA8350"/>
+            
+
+            <g filter="url(#filter0_ng_171_4)">
+            <circle cx="89" cy="89" r="84" fill="#FFCA75"/>
+            </g>
+            <defs>
+            <filter id="filter0_ng_171_4" x="0.459459" y="0.459459" width="177.081" height="177.081" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feTurbulence type="fractalNoise" baseFrequency="0.1101190447807312 0.1101190447807312" stitchTiles="stitch" numOctaves="3" result="noise" seed="5660" />
+            <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise" />
+            <feComponentTransfer in="alphaNoise" result="coloredNoise1">
+            <feFuncA type="discrete" tableValues="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 "/>
+            </feComponentTransfer>
+            <feComposite operator="in" in2="shape" in="coloredNoise1" result="noise1Clipped" />
+            <feFlood flood-color="rgba(238, 177, 80, 0.36)" result="color1Flood" />
+            <feComposite operator="in" in2="noise1Clipped" in="color1Flood" result="color1" />
+            <feMerge result="effect1_noise_171_4">
+            <feMergeNode in="shape" />
+            <feMergeNode in="color1" />
+            </feMerge>
+            <feTurbulence type="fractalNoise" baseFrequency="0.1101190447807312 0.1101190447807312" numOctaves="3" seed="7377" />
+            <feDisplacementMap in="effect1_noise_171_4" scale="9.0810813903808594" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+            <feMerge result="effect2_texture_171_4">
+            <feMergeNode in="displacedImage"/>
+            </feMerge>
+            </filter>
+            </defs>
         </svg>
+
+        
 
         {#each sliceNumber as slice (slice)}
             {#if slice.x !== null && slice.y !== null}
@@ -58,6 +88,8 @@
         width: 85vw;
         margin: 7% auto;
         position: relative;
+        border-radius: 30px;
+        overflow: hidden;
     }
 
     #pan {
@@ -78,6 +110,7 @@
 
 		#container{
 			height: 50vh;
+            border-radius: 20px;
 		}
     }
 </style>
