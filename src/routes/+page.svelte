@@ -70,12 +70,21 @@
     <p class="tex-center text-[#355C7D] mx-4 my-4">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
     <p class="tex-center text-[#355C7D] mx-4 mb-4">   Here you will find useful recipes for the day to day basis, where you can cook delicious dishes in little time, full of flavour</p>
 
-    <div class="bg-[url('https://goldentruffle.com/wp-content/uploads/2022/05/sausage-omelette.jpg')] bg-cover bg-no-repeat w-sm h-24 mx-auto rounded-4xl "></div>
+    <div class="bg-[url('https://goldentruffle.com/wp-content/uploads/2022/05/sausage-omelette.jpg')] bg-cover bg-no-repeat w-2xs h-36 mx-auto rounded-4xl mb-6"></div>
 
 
 <div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-full h-12 rotate-180"></div>
 
 
+<svg width="35" height="566" viewBox="0 0 35 566" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17" cy="16" r="16" fill="#FDF6E3"/>
+<circle cx="18" cy="105" r="16" fill="#FDF6E3"/>
+<circle cx="16" cy="194" r="16" fill="#FDF6E3"/>
+<circle cx="17" cy="283" r="16" fill="#FDF6E3"/>
+<circle cx="18" cy="372" r="16" fill="#FDF6E3"/>
+<circle cx="19" cy="461" r="16" fill="#FDF6E3"/>
+<circle cx="17" cy="550" r="16" fill="#FDF6E3"/>
+</svg>
 
 
 
