@@ -67,10 +67,10 @@
     }
 
     @keyframes bounce {
-        0%   { transform: translateY(0); }
-        30%  { transform: translateY(-10px); }
-        60%  { transform: translateY(5px); }
-        100% { transform: translateY(0); }
+        0%   { transform: translateX(0); }
+        30%  { transform: translateX(-10px); }
+        60%  { transform: translateX(5px); }
+        100% { transform: translateX(0); }
     }
 
     @media (max-width: 800px) {
