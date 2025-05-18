@@ -64,13 +64,13 @@
             
     </header>
 
-    <h1 class="text-center text-3xl text-[#355C7D] fredokabold">PLAY WITH YOUR FOOD</h1>
-    <h3 class="text-center text-2xl text-[#F67280]">and learn how to cook too!</h3>
+    <h1 class="text-center text-3xl text-[#355C7D] fredokabold mt-4">PLAY WITH YOUR FOOD</h1>
+    <h3 class="text-center text-2xl text-[#F67280] mb-4">and learn how to cook too!</h3>
 
-    <p class="tex-center text-[#355C7D]">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
-    <p class="tex-center text-[#355C7D]">   Here you will find useful recipes for the day to day basis, where you can cook delicious dishes in little time, full of flavour</p>
+    <p class="tex-center text-[#355C7D] mx-4 mt-4">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
+    <p class="tex-center text-[#355C7D] mx-4 mb-4">   Here you will find useful recipes for the day to day basis, where you can cook delicious dishes in little time, full of flavour</p>
 
-<div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-full h-24 rotate-180">whatever</div>
+<div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-full h-12 rotate-180">whatever</div>
 
 
 
@@ -98,18 +98,22 @@
         {:else if cookingStation === "FlipOmelette"}
             <FlipOmelette />
         {/if}
+
+        <div class="text-white text-center fredokabold gap-4 w-3/4 items-center mx-auto py-4">
+        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCrackEgg}>Crack the Eggs</button>
+        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCutSausage}>Cut the Sausage</button>
+        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showPanSausage}>Place Sausage in Pan</button>
+        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showFlipOmelette}>Flip the Omelette</button>
     </div>
 
- <div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-screen h-24 ">whatever</div>
+    </div>
+    
+
+ <div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-screen h-12 ">whatever</div>
 
 
     
-    <div class="text-white text-center fredokabold gap-4 ">
-        <button class="rounded-full bg-[#F67280] px-4 py-2" on:click={showCrackEgg}>Crack the Eggs</button>
-        <button class="rounded-full bg-[#F67280] px-4 py-2" on:click={showCutSausage}>Cut the Sausage</button>
-        <button class="rounded-full bg-[#F67280] px-4 py-2" on:click={showPanSausage}>Place Sausage in Pan</button>
-        <button class="rounded-full bg-[#F67280] px-4 py-2" on:click={showFlipOmelette}>Flip the Omelette</button>
-    </div>
+    
 
     <!-- <div class="choices">
         <button on:click={showCrackEgg}>Previous</button>
