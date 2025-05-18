@@ -70,10 +70,12 @@
     <p class="tex-center text-[#355C7D]">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
     <p class="tex-center text-[#355C7D]">   Here you will find useful recipes for the day to day basis, where you can cook delicious dishes in little time, full of flavour</p>
 
+<div class="bg-[url(/static/Knife.svg)] bg-no-repeat bg-contain h-64 w-64 bg-gray-100">whatever</div>
 
-<div class="rotate-180 bg-[url('/static/Border.svg')] bg-no-repeat bg-cover h-64">
 
-</div>
+
+
+
 
     <div class="bg-[#355C7D]"
     role="region"
