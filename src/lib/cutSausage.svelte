@@ -73,20 +73,23 @@
 		display: flex;
 		height: 85vh;
 		width: 85vw;
-		margin: 7% auto;
+		margin-right: auto;
+		margin-left: auto;
 		border-radius: 30px;
 		overflow: hidden;
+		gap: 5%;
 	}
 
-    #container .sausage {
+    .sausage {
 		align-self: center;
-		margin-top: 10%;
 		width: 100%;
+		height: 100%;
     }
 	.sausage svg{
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+		padding: 5%;
 	}
 
 	.knife-button{
@@ -103,8 +106,9 @@
 	}
 
 	@media (max-width: 600px) {
-		#container .sausage{
-			margin-top: 35%;
+		.sausage{
+			margin-top: 30%;
+			margin-bottom: 15%;
 		}
 
 		.sausage svg{

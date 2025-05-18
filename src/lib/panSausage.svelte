@@ -58,7 +58,8 @@
         background-color: red;
         height: 85vh;
         width: 85vw;
-        margin: 7% auto;
+		margin-right: auto;
+		margin-left: auto;
         position: relative;
         border-radius: 30px;
         overflow: hidden;
