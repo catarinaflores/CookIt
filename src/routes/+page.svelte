@@ -60,7 +60,7 @@
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_141_418" result="shape"/>
             </filter>
             </defs>
-            </svg>
+        </svg>
             
     </header>
 
@@ -158,7 +158,7 @@
 <rect width="1920" height="223" fill="white"/>
 </clipPath>
 </defs>
-</svg>
+    </svg>
 
 
     

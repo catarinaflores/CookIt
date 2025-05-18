@@ -49,7 +49,8 @@
         align-items: center;
         height: 85vh;
         width: 85vw;
-        margin: 7% auto;
+		margin-right: 7% auto;
+		margin-left: 7% auto;
         background-color: white;
         overflow: hidden;
         border-radius: 30px;
