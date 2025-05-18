@@ -76,15 +76,6 @@
 <div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-full h-12 rotate-180"></div>
 
 
-<svg width="35" height="566" viewBox="0 0 35 566" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="17" cy="16" r="16" fill="#FDF6E3"/>
-<circle cx="18" cy="105" r="16" fill="#FDF6E3"/>
-<circle cx="16" cy="194" r="16" fill="#FDF6E3"/>
-<circle cx="17" cy="283" r="16" fill="#FDF6E3"/>
-<circle cx="18" cy="372" r="16" fill="#FDF6E3"/>
-<circle cx="19" cy="461" r="16" fill="#FDF6E3"/>
-<circle cx="17" cy="550" r="16" fill="#FDF6E3"/>
-</svg>
 
 
 
