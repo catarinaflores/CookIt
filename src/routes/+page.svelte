@@ -28,11 +28,6 @@
     }
 </script>
 
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
-</head>
 
 <main class="bg-[#FDF6E3] fredokalight">
     <header class="bg-[#355C7D] justify-center flex">
@@ -110,6 +105,8 @@
 </main>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
     
 .fredokalight {
   font-family: "Fredoka", sans-serif;
