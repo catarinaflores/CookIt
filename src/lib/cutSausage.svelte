@@ -73,8 +73,8 @@
 		display: flex;
 		height: 85vh;
 		width: 85vw;
-		margin-right: 7% auto;
-		margin-left: 7% auto;
+		margin-right: auto;
+		margin-left: auto;
 		border-radius: 30px;
 		overflow: hidden;
 	}

@@ -1,4 +1,4 @@
-<div id="Recepie">
+<div class="fredokalight">
     <h2>Omelette</h2>
     <h3>Ingredients</h3>
     <ul>
@@ -19,10 +19,26 @@
 </div>
 
 <style>
-    #Recepie {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap');
+
+
+
+    .fredokalight {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fredokabold {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 </style>
