@@ -64,13 +64,16 @@
             
     </header>
 
-    <h1 class="text-center text-3xl text-[#355C7D] fredokabold mt-4">PLAY WITH YOUR FOOD</h1>
-    <h3 class="text-center text-2xl text-[#F67280] mb-4">and learn how to cook too!</h3>
+    <h1 class="text-center text-2xl text-[#355C7D] fredokabold mt-4">PLAY WITH YOUR FOOD</h1>
+    <h3 class="text-center text-xl text-[#F67280] -mt-1 mb-4">and learn how to cook too!</h3>
 
-    <p class="tex-center text-[#355C7D] mx-4 mt-4">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
+    <p class="tex-center text-[#355C7D] mx-4 my-4">   Get ready to slice, crack, and flip your way through fun mini cooking games and learn real recipes along the way. It’s time to cook, but let’s make it fun!</p>
     <p class="tex-center text-[#355C7D] mx-4 mb-4">   Here you will find useful recipes for the day to day basis, where you can cook delicious dishes in little time, full of flavour</p>
 
-<div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-full h-12 rotate-180">whatever</div>
+    <div class="bg-[url('https://goldentruffle.com/wp-content/uploads/2022/05/sausage-omelette.jpg')] bg-cover bg-no-repeat w-sm h-24 mx-auto rounded-4xl "></div>
+
+
+<div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-full h-12 rotate-180"></div>
 
 
 
@@ -84,8 +87,8 @@
     role="region"
     >
 
-        <h3 class="text-center text-2xl text-[#F67280]">dish of the day</h3>
-    <h1 class="text-center text-3xl text-white fredokabold">SAUSAGE OMELET</h1>
+        <h3 class="text-center text-xl text-[#F67280] -mb-1">dish of the day</h3>
+    <h1 class="text-center text-3xl text-white fredokabold mb-6">SAUSAGE OMELET</h1>
     
         <!--{JSON.stringify( mousePosition)} -->
         <!-- Render dynamic component -->
@@ -99,7 +102,7 @@
             <FlipOmelette />
         {/if}
 
-        <div class="text-white text-center fredokabold gap-4 w-3/4 items-center mx-auto py-4">
+        <div class="text-white text-center fredokabold gap-4 w-3/4 items-center mt-4 mx-auto py-4">
         <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCrackEgg}>Crack the Eggs</button>
         <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCutSausage}>Cut the Sausage</button>
         <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showPanSausage}>Place Sausage in Pan</button>
@@ -109,7 +112,7 @@
     </div>
     
 
- <div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-screen h-12 ">whatever</div>
+ <div class="bg-[url('/Border.svg')] bg-contain bg-no-repeat w-screen h-12 "></div>
 
 
     
@@ -131,7 +134,7 @@
 .fredokalight {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
