@@ -125,6 +125,9 @@
 
     <!-- Static component -->
     <Recepies />
+
+    <footer class="bg-[#355C7D] text-center text-white py-4 fredokabold">
+        <p>Project by Catarina Costa and Leonor Tedim.</p>
 </main>
 
 <style>
