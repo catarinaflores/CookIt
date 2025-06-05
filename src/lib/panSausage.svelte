@@ -55,7 +55,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: red;
+        background-color: #F67280;
         height: 85vh;
         width: 85vw;
 		margin-right: auto;

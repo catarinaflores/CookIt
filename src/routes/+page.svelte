@@ -86,15 +86,10 @@
 
 
 
-    <div class="bg-[#355C7D]"
-
-    
-
-    role="region"
-    >
+    <div class="bg-[#355C7D]" role="region">
 
         <h3 class="text-center text-xl text-[#F67280] -mb-1">dish of the day</h3>
-    <h1 class="text-center text-3xl text-white fredokabold mb-6 xl:mb-18">SAUSAGE OMELET</h1>
+        <h1 class="text-center text-3xl text-white fredokabold mb-6 xl:mb-18">SAUSAGE OMELET</h1>
     
         <!--{JSON.stringify( mousePosition)} -->
         <!-- Render dynamic component -->
@@ -109,11 +104,11 @@
         {/if}
 
         <div class="text-white text-center fredokabold gap-4 w-3/4 items-center mt-4 mx-auto py-4">
-        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCrackEgg}>Crack the Eggs</button>
-        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCutSausage}>Cut the Sausage</button>
-        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showPanSausage}>Place Sausage in Pan</button>
-        <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showFlipOmelette}>Flip the Omelette</button>
-    </div>
+            <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCrackEgg}>Crack the Eggs</button>
+            <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showCutSausage}>Cut the Sausage</button>
+            <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showPanSausage}>Place Sausage in Pan</button>
+            <button class="rounded-full bg-[#F67280] px-4 py-2 mb-2" on:click={showFlipOmelette}>Flip the Omelette</button>
+        </div>
 
     </div>
     

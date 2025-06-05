@@ -46,7 +46,7 @@
         width: 85vw;
 		margin-right: auto;
 		margin-left: auto;
-        background-color: white;
+        background-color: #D18C4F;
         overflow: hidden;
         border-radius: 30px;
     }

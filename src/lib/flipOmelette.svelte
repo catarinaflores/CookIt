@@ -51,7 +51,7 @@
         width: 85vw;
 		margin-right: auto;
 		margin-left: auto;
-        background-color: white;
+        background-color: #FDF6E3;
         overflow: hidden;
         border-radius: 30px;
     }
